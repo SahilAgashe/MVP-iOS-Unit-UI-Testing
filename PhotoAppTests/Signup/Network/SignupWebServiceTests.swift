@@ -88,8 +88,8 @@ class SignupWebServiceTests: XCTestCase {
         // Act
         sut.signup(withForm: signupFormRequestModel) { signupResponseModel, signupError in
             // Assert
-            XCTAssertEqual(signupError, SignupError.failedRequest(description: errorDescription))
-            XCTAssertEqual(signupError?.localizedDescription, errorDescription)
+            XCTAssertEqual(signupError, SignupError.failedRequest(description: errorDescription), "The signup() method did not return an expected error for the failed request")
+            XCTAssertEqual(signupError?.localizedDescription, errorDescription, "Unexpected error localized description")
             expectation.fulfill()
         }
         
