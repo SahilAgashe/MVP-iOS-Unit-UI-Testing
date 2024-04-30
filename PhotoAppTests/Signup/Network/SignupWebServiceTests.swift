@@ -86,10 +86,10 @@ class SignupWebServiceTests: XCTestCase {
         MockURLProtocol.error = SignupError.failedRequest(description: errorDescription)
         
         // Act
-        sut.signup(withForm: signupFormRequestModel) { signupResponseModel, error in
+        sut.signup(withForm: signupFormRequestModel) { signupResponseModel, signupError in
             // Assert
-            XCTAssertEqual(error, SignupError.failedRequest(description: errorDescription))
-            XCTAssertEqual(error?.localizedDescription, errorDescription)
+            XCTAssertEqual(signupError, SignupError.failedRequest(description: errorDescription))
+            XCTAssertEqual(signupError?.localizedDescription, errorDescription)
             expectation.fulfill()
         }
         
