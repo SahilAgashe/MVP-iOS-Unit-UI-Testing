@@ -24,6 +24,8 @@
 		816CD13B2BE48A1300BAADF8 /* SignupModelValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816CD13A2BE48A1300BAADF8 /* SignupModelValidatorProtocol.swift */; };
 		816CD1432BE4FF3B00BAADF8 /* MockSignupWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816CD1422BE4FF3B00BAADF8 /* MockSignupWebService.swift */; };
 		816CD1452BE500B100BAADF8 /* SignupWebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816CD1442BE500B100BAADF8 /* SignupWebServiceProtocol.swift */; };
+		816CD1472BE5281A00BAADF8 /* MockSignupViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816CD1462BE5281A00BAADF8 /* MockSignupViewDelegate.swift */; };
+		816CD1492BE5287C00BAADF8 /* SignupViewDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816CD1482BE5287C00BAADF8 /* SignupViewDelegateProtocol.swift */; };
 		8179723D2BE29B9400487A97 /* SignupPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8179723C2BE29B9400487A97 /* SignupPresenterTests.swift */; };
 		8179723F2BE29C4F00487A97 /* SignupFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8179723E2BE29C4F00487A97 /* SignupFormModel.swift */; };
 		817972412BE29D0900487A97 /* SignupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817972402BE29D0900487A97 /* SignupPresenter.swift */; };
@@ -63,6 +65,8 @@
 		816CD13A2BE48A1300BAADF8 /* SignupModelValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModelValidatorProtocol.swift; sourceTree = "<group>"; };
 		816CD1422BE4FF3B00BAADF8 /* MockSignupWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupWebService.swift; sourceTree = "<group>"; };
 		816CD1442BE500B100BAADF8 /* SignupWebServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupWebServiceProtocol.swift; sourceTree = "<group>"; };
+		816CD1462BE5281A00BAADF8 /* MockSignupViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSignupViewDelegate.swift; sourceTree = "<group>"; };
+		816CD1482BE5287C00BAADF8 /* SignupViewDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewDelegateProtocol.swift; sourceTree = "<group>"; };
 		8179723C2BE29B9400487A97 /* SignupPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenterTests.swift; sourceTree = "<group>"; };
 		8179723E2BE29C4F00487A97 /* SignupFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModel.swift; sourceTree = "<group>"; };
 		817972402BE29D0900487A97 /* SignupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPresenter.swift; sourceTree = "<group>"; };
@@ -207,6 +211,7 @@
 			children = (
 				816CD13A2BE48A1300BAADF8 /* SignupModelValidatorProtocol.swift */,
 				816CD1442BE500B100BAADF8 /* SignupWebServiceProtocol.swift */,
+				816CD1482BE5287C00BAADF8 /* SignupViewDelegateProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 				810DDC5D2BDF8CB00012F6BD /* MockURLProtocol.swift */,
 				817972422BE29DB100487A97 /* MockSignupModelValidator.swift */,
 				816CD1422BE4FF3B00BAADF8 /* MockSignupWebService.swift */,
+				816CD1462BE5281A00BAADF8 /* MockSignupViewDelegate.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -356,6 +362,7 @@
 				810DDC2C2BDF266C0012F6BD /* SceneDelegate.swift in Sources */,
 				810DDC4F2BDF28230012F6BD /* SignupFormRequestModel.swift in Sources */,
 				810DDC532BDF28550012F6BD /* SignupError.swift in Sources */,
+				816CD1492BE5287C00BAADF8 /* SignupViewDelegateProtocol.swift in Sources */,
 				8179723F2BE29C4F00487A97 /* SignupFormModel.swift in Sources */,
 				810DDC512BDF28390012F6BD /* SignupResponseModel.swift in Sources */,
 				816CD13B2BE48A1300BAADF8 /* SignupModelValidatorProtocol.swift in Sources */,
@@ -375,6 +382,7 @@
 				810DDC5C2BDF293B0012F6BD /* SignupWebServiceTests.swift in Sources */,
 				817972432BE29DB100487A97 /* MockSignupModelValidator.swift in Sources */,
 				81B4296F2BE15EF20042EB15 /* SignupFormModelValidatorTests.swift in Sources */,
+				816CD1472BE5281A00BAADF8 /* MockSignupViewDelegate.swift in Sources */,
 				8179723D2BE29B9400487A97 /* SignupPresenterTests.swift in Sources */,
 				810DDC442BDF26C60012F6BD /* PhotoAppTests.swift in Sources */,
 			);
