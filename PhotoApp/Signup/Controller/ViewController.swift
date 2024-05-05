@@ -7,13 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController {}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
-}
+/*
+ The Strategy =>
+ Make UIViewController responsible for
+ 1.Managing views and,
+ 2.Handle user interaction events
+ 3.Delegate to other classes
+  1. Network calls
+  2. Data validation
+  3. Sorting, parsing, persistence etc
+ */
 
